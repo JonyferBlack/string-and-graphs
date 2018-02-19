@@ -1,0 +1,7 @@
+20:43:16 **** Incremental Build of configuration Debug for project assign20_anagrams ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\assign20_anagrams.o" "..\\src\\assign20_anagrams.cpp" 
+g++ -o assign20_anagrams.exe "src\\assign20_anagrams.o" 
+
+20:43:17 Build Finished (took 685ms)
+

@@ -1,0 +1,82 @@
+//============================================================================
+// Name        : assign18_queue.cpp
+// Author      : aivanov
+//
+//in:
+//8
+//COME 5
+//WORRY 1
+//WORRY 4
+//COME -2
+//WORRY_COUNT
+//COME 3
+//WORRY 3
+//WORRY_COUNT
+//
+//out:
+//1
+//2
+//============================================================================
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int Worry_count(const vector<bool>& queue){
+	int count = 0;
+	for (const auto& person : queue){
+		if (person) count++;
+	}
+	return count;
+}
+
+int main() {
+	const vector<string> cmds = {"WORRY", "QUIET", "COME", "WORRY_COUNT"};
+
+	int N;
+	cin>>N;
+
+	vector<string> commands(N);
+	vector<int> volumes(N);
+	for (auto i = 0; i < N; i++){
+    	auto& temp = commands[i];
+		cin >> temp;
+    	if (temp == cmds[0] || temp == cmds[1] || temp == cmds[2])
+    		cin >> volumes[i];
+    }
+
+	vector<bool> queue;
+
+	for (auto i = 0; i < commands.size(); i++){
+		auto& cmd = commands[i];
+
+		if (cmd == cmds[0]){
+			queue[volumes[i]] = true;
+			i++;
+			continue;
+		}
+		if (cmd == cmds[1]){
+				queue[volumes[i]] = false;
+				i++;
+				continue;
+		}
+
+		if (cmd == cmds[2]){
+				auto count = volumes[i];
+				if (count > 0) {
+					queue.assign(count, false);
+				}
+				else if (count < 0){
+					queue.resize(queue.size() + count);
+				}
+				i++;
+				continue;
+		}
+
+		if (cmd == cmds[3]){
+			cout<<Worry_count(queue);
+		}
+	}
+
+	return 0;
+}

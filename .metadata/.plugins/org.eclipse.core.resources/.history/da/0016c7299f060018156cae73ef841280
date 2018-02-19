@@ -1,0 +1,18 @@
+//============================================================================
+// Name        : assign22_bus_stops_1.cpp
+// Author      : aivanov
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+void NEW_BUS(int bus, int stops_count, string* args){
+
+}
+
+int main() {
+
+
+	cout << "" << endl; // prints 
+	return 0;
+}

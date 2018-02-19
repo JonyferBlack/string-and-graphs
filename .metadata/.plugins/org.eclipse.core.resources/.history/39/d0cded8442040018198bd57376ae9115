@@ -1,0 +1,50 @@
+//============================================================================
+// Name        : assign19_mounthly_deals.cpp
+// Author      : aivanov
+// Version     :
+// Copyright   : 
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+void Add(){
+
+}
+
+void Next(vector<string>& data, int& currentMounth, const int nextDaysCount){
+	string delta;
+	if (data.size() < nextDaysCount){
+		for (auto i = data.size() - nextDaysCount - 1; i < data.size(); i++){
+			delta += " "+ data[i];
+		}
+	}
+
+	v1.insert(end(v1), begin(v2), end(v2));
+
+	currentMounth != 12 ? currentMounth++ : 0;
+}
+
+void Dump(const vector<string>& data, const int& i){
+	cout << data[i];
+}
+
+int main() {
+	const vector<int> dayNumbers = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+	int currentMounth = 0;
+	vector<string> deals(dayNumbers[currentMounth]);
+
+	int Q;
+	cin >> Q;
+
+	for (auto i = 0; i < Q; i++){
+
+	}
+
+
+	return 0;
+}

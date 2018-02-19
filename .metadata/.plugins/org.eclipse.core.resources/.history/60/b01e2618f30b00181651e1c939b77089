@@ -1,0 +1,61 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+long long get_fibonacci_huge_naive(long long n, long long m) {
+    if (n <= 1)
+        return n;
+
+    long long previous = 0;
+    long long current  = 1;
+
+    for (long long i = 0; i < n - 1; ++i) {
+        long long tmp_previous = previous;
+        previous = current;
+        current = tmp_previous + current;
+    }
+
+    return current % m;
+}
+
+int fibonacci_fast(const int& n) {
+    if (n <= 1)
+        return n;
+
+	vector<int> fib_seq;
+	fib_seq.push_back(1);
+    fib_seq.push_back(1);
+    for (auto i = 2; i < n; i++){
+    	fib_seq.push_back(fib_seq[i-1] + fib_seq[i-2]);
+    }
+
+    return fib_seq.back();
+}
+
+long long get_fibonacci_huge_fast(const long long& n, const long long& m) {
+    if (n <= 1){
+        return n;
+    }
+
+	const vector<int> even_seq = {0, 1, 1};
+	const vector<int> un_even_seq = {0, 1, 1, 2, 0, 2, 2, 1};
+
+	bool even = m % 2;
+	int divisor = 3;
+	if (!even) divisor = 8;
+
+	int mod = n % divisor;
+
+    int result = fibonacci_fast(mod - 1);
+
+	return result % m;
+}
+
+int main() {
+    long long n, m;
+    std::cin >> n >> m;
+    std::cout << get_fibonacci_huge_naive(n, m) << endl;
+    std::cout << get_fibonacci_huge_fast(n, m) << '\n';
+    return 0;
+}

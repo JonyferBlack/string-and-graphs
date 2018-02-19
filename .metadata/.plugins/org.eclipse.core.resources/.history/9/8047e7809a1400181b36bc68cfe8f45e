@@ -1,0 +1,18 @@
+//============================================================================
+// Name        : string_exact_match.cpp
+// Author      : aivanov
+// Version     :
+// Copyright   : 
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include "string_exact_match.h"
+
+using namespace std;
+using namespace string_exact_match_exersises;
+
+int main() {
+	cout << string_exact_match("abcdefjdef", "de") << endl; // prints
+	return 0;
+}

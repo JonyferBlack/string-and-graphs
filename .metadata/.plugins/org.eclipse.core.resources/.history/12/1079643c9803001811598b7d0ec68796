@@ -1,0 +1,40 @@
+//============================================================================
+// Name        : assign17_average_temp.cpp
+// Author      : aivanov
+//
+//in:
+//5
+//7 6 3 0 9
+//out:
+//3
+//0 1 4
+//============================================================================
+
+#include <vector>
+#include <iostream>
+using namespace std;
+
+int Average(vector<int> sequence){
+	int result=0;
+	for(auto& temp : sequence){
+    	result+=temp;
+    }
+
+}
+
+int main() {
+	int N;
+	cin>>N;
+
+	vector<int> day_temps(N);
+	for(auto& temp : day_temps){
+    	cin>>temp;
+    }
+
+	for(auto& temp : day_temps){
+    	cin>>temp;
+    }
+
+
+	return 0;
+}

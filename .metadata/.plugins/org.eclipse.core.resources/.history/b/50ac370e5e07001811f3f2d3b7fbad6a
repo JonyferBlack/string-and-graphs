@@ -1,0 +1,15 @@
+//============================================================================
+// Name        : assign23_bus_stops_2.cpp
+// Author      : aivanov
+//============================================================================
+
+#include <iostream>
+#include <map>
+#include <vector>
+
+using namespace std;
+
+int main() {
+
+	return 0;
+}

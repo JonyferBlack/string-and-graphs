@@ -1,0 +1,7 @@
+17:44:07 **** Incremental Build of configuration Debug for project string_exact_match ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o string_exact_match "src\\main.o" "src\\string_exact_match.o" 
+
+17:44:08 Build Finished (took 482ms)
+

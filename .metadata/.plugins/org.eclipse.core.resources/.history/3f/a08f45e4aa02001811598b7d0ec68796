@@ -1,0 +1,34 @@
+//============================================================================
+// Name        : assign12_palindrome_filter.cpp
+// Author      : aivanov
+// Version     :
+// Copyright   : 
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <vector>
+#include <string>
+
+using namespace std;
+
+bool IsPalindrom(string word){
+	for (auto i=0; i < word.length() / 2; i++){
+		if (word[i] != word[word.length() - i - 1]) return false;
+	}
+	return true;
+}
+
+std::vector<string> PalindromFilter(std::vector<string> input, int minLength){
+	std::vector<string> result;
+	for (auto s : input){
+		if (s.length() < minLength) continue;
+        result.push_back(s);
+	}
+
+}
+
+int main() {
+	cout << "" << endl; // prints 
+	return 0;
+}

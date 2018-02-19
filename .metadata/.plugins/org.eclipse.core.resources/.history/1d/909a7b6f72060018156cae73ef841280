@@ -1,0 +1,21 @@
+//============================================================================
+// Name        : ssign21_capitals_list.cpp
+// Author      : aivanov
+//============================================================================
+
+#include <iostream>
+#include <map>
+
+using namespace std;
+
+void CHANGE_CAPITAL()
+
+int main() {
+	int Q;
+	cin << Q;
+
+
+
+
+	return 0;
+}

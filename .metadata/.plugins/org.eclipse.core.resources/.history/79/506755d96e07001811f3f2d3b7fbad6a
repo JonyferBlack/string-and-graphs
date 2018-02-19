@@ -1,0 +1,59 @@
+//============================================================================
+// Name        : assign26_synonims.cpp
+// Author      : aivanov
+//============================================================================
+
+#include <iostream>
+#include <set>
+#include <vector>
+#include <map>
+
+using namespace std;
+
+set<string> BuildMapValuesSet(const map<int, string>& m) {
+	set<string> result;
+	for (const auto& pair : m)
+		result.insert(pair.second);
+	return result;
+}
+
+int main() {
+	const vector<string> known_commands = {"ADD", "COUNT", "CHECK"};
+	vector<set<string>> synonyms;
+
+	int Q;
+	cin >> Q;
+	string command;
+	for (auto i = 0; i < Q; i++){
+		cin >> command;
+		if (command == known_commands[0]){
+			string word1, word2;
+			cin >> word1;
+			cin >> word2;
+			set<string>  tmp = {word1, word2};
+			for (auto& item : synonyms){
+				if (item.count(word1) != 0 || item.count(word2) != 0)
+					item.insert(begin(tmp), end(tmp));
+				else synonyms.push_back(tmp);
+			}
+		} else {
+			string word;
+			for (auto& item : synonyms){
+				if (item.count(word) != 0) {
+					cout << item.size() << endl;
+					continue;
+				}
+			} else {
+			string word1, word2;
+			cin >> word1;
+			cin >> word2;
+			set<string>  tmp = {word1, word2};
+			for (auto& item : synonyms){
+				if (item.count(word1) != 0 || item.count(word2) != 0)
+					item.insert(begin(tmp), end(tmp));
+			}
+		}
+	}
+
+	return 0;
+}

@@ -1,0 +1,17 @@
+//============================================================================
+// Name        : assign15_reverse_of_sequence.cpp
+// Author      : aivanov
+//
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+void Reverse(vector<int>& v){
+
+}
+
+int main() {
+	cout << "" << endl; // prints 
+	return 0;
+}

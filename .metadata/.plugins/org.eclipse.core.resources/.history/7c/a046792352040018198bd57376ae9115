@@ -1,0 +1,72 @@
+//============================================================================
+// Name        : assign19_mounthly_deals.cpp
+// Author      : aivanov
+// Version     :
+// Copyright   : 
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+void Add(vector<string>& data, string s, int i){
+	data[i] += s;
+}
+
+void Next(vector<string>& data, int& currentMounth, const int nextDaysCount){
+	string delta;
+
+	vector<string> copy = data;
+	if (data.size() > nextDaysCount){
+		for (auto i = data.size() - nextDaysCount - 1; i < data.size(); i++){
+			delta += " "+ data[i];
+		}
+		data.resize(nextDaysCount);
+		data[nextDaysCount - 1] = " " + delta;
+	}
+	else {
+		data.clear();
+		data.resize(nextDaysCount);
+		data.insert(end(data), begin(copy), end(copy));
+	}
+
+	currentMounth != 12 ? currentMounth++ : 0;
+}
+
+void Dump(const vector<string>& data, const int& i){
+	cout << data[i];
+}
+
+int main() {
+	const vector<int> dayNumbers = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+	int currentMounth = 0;
+	vector<string> deals(dayNumbers[currentMounth]);
+
+	int Q;
+	cin >> Q;
+
+	string command;
+	string s;
+	int x;
+	for (auto i = 0; i < Q; i++){
+		cin >> command;
+		if (command == "ADD"){
+			cin >> x;
+			cin >> s;
+			Add(deals, s, x);
+		}
+		if (command == "DUMP"){
+			cin >> x;
+			Dump(deals, x);
+		}
+		if (command == "NEXT"){
+			Dump(deals, currentMounth);
+		}
+	}
+
+
+	return 0;
+}

@@ -1,0 +1,81 @@
+//============================================================================
+// Name        : assign22_bus_stops_1.cpp
+// Author      : aivanov
+//============================================================================
+
+#include <iostream>
+#include <map>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+void NEW_BUS(map<int, vector<string>>& stops_by_bus, int bus, vector<string>& stops){
+	stops_by_bus[bus] = stops;
+}
+
+vector<int> BUSES_FOR_STOP(const map<int, vector<string>>& stops_by_bus, const string& stop){
+	int buses = 0;
+	vector<int> result;
+	for (auto& pair : stops_by_bus){
+		auto& stops = pair.second;
+		if (std::count(stops.begin(), stops.end(), stop) != 0){
+			cout << pair.first;
+			++buses;
+		}
+	}
+
+	if (buses == 0) cout << "No stop";
+}
+
+void STOPS_FOR_BUS(map<int, vector<string>>& stops_by_bus, int bus){
+	if (stops_by_bus.count(bus) == 0) cout << "No bus";
+	for (auto& stop : stops_by_bus[bus]){
+		if ()
+		cout << "Stop" << stop << " ";
+		int buses = 0;
+		for (auto& pair : stops_by_bus){
+			auto& stops = pair.second;
+			if (std::count(stops.begin(), stops.end(), stop) != 0){
+				cout << pair.first;
+				++buses;
+			}
+		}
+		if (buses == 0) cout << "No stop";
+		cout<<endl;
+	}
+}
+
+int main() {
+	const vector<string> known_commands = {"NEW_BUS", "BUSES_FOR_STOP", "STOPS_FOR_BUS", "ALL_BUSES"};
+	map<int, vector<string>> stops_by_bus;
+	int Q;
+	cin >> Q;
+
+	string command;
+	for (auto i = 0; i < Q; i++){
+		cin >> command;
+		if (command == known_commands[0]){
+			int count, bus;
+			cin >> bus;
+			cin >> count;
+			vector<string> args(count);
+			for (auto& item : args){
+				cin >> item;
+			}
+			NEW_BUS(stops_by_bus, bus, args);
+			cout<<endl;
+		} else if (command == known_commands[1]){
+			string stop;
+			cin >> stop;
+			BUSES_FOR_STOP(stops_by_bus, stop);
+			cout<<endl;
+		} else if (command == known_commands[2]){
+
+		} else if (command == known_commands[3]){
+
+		}
+	}
+
+	return 0;
+}

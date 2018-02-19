@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ssign21_capitals_list&apos; to &apos;assign21_capitals_list&apos;" description="Rename resource &apos;ssign21_capitals_list&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/ssign21_capitals_list" name="assign21_capitals_list" stamp="1517336300224" updateReferences="true"/>
+</session>

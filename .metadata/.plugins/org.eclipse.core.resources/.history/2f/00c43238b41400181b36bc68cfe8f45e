@@ -1,0 +1,24 @@
+//============================================================================
+// Name        : string pattern matches exersises
+// Author      : aivanov
+//============================================================================
+
+#include <iostream>
+#include "string_exact_match.h"
+
+using namespace std;
+using namespace string_exact_match_exersises;
+
+template<typename T>
+void print_vector(const vector<T>& v){
+	for(const auto& item : v){
+		cout << item << " ";
+	}
+}
+
+int main() {
+//	cout << string_exact_match_naive("abcdefjdef", "de") << endl; // prints
+
+	print_vector(z_algorithm_naive("aabcaabxaaz"));
+	return 0;
+}

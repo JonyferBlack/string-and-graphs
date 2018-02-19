@@ -1,0 +1,41 @@
+#include <vector>
+
+#include "string_exact_match.h"
+
+namespace string_exact_match_exersises {
+
+using std::string;
+using std::vector;
+
+/*
+ * Returns true when patter first occured, false if not
+ *
+ * Worst case is Omega(n * m) for n is pattern length and m is text length
+ *
+ */
+bool string_exact_match_naive(const string& text, const string& pattern) {
+	int n = pattern.length(), m = text.length();
+	for (auto i = 0; i + n < m; ++i) {
+		int j = 0;
+		while (text[i + j] == pattern[j]) {
+			j++;
+			if (j == n)
+				return true;
+		}
+	}
+	return false;
+}
+
+/*
+ * String preproccesing algorithm
+*/
+void preproccess_string(const string& s){
+	vector<int> Z;
+	int k = 1, r = 0, l = 0;
+	for (auto i = 1; i < s.length(); ++i){
+
+	}
+}
+
+
+}

@@ -1,0 +1,15 @@
+//============================================================================
+// Name        : assign25_set_of_the_map.cpp
+// Author      : aivanov
+// Version     :
+// Copyright   : 
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	cout << "" << endl; // prints 
+	return 0;
+}

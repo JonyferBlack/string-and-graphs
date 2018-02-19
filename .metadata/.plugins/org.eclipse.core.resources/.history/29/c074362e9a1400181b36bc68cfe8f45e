@@ -1,0 +1,12 @@
+#include "string_exact_match.h"
+
+namespace string_exact_match_exersises {
+
+using std::string;
+
+bool string_exact_match(const string& text, const string& pattern) {
+
+	return false;
+}
+
+}

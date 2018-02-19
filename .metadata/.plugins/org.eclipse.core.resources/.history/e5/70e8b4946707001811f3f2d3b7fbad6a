@@ -1,0 +1,20 @@
+//============================================================================
+// Name        : assign24_uniq_strings.cpp
+// Author      : aivanov
+//============================================================================
+
+#include <set>
+#include <iostream>
+using namespace std;
+
+int main() {
+	int N;
+	cin >> N;
+	set<string> m_set(N);
+	for (auto& next : m_set){
+
+	}
+
+	cout << m_set.size();
+	return 0;
+}

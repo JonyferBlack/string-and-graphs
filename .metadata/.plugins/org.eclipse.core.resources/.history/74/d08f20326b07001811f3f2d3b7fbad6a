@@ -1,0 +1,30 @@
+//============================================================================
+// Name        : assign26_synonims.cpp
+// Author      : aivanov
+//============================================================================
+
+#include <iostream>
+#include <set>
+#include <map>
+
+using namespace std;
+
+set<string> BuildMapValuesSet(const map<int, string>& m) {
+	set<string> result;
+	for (const auto& pair : m)
+		result.insert(pair.second);
+	return result;
+}
+
+int main() {
+	const vector<string> known_commands = {"ADD ", "", ""};
+	map<set<string>, int> synonyms;
+
+	int Q;
+	cin >> Q;
+	for (auto i = 0; i < Q; i++){
+
+	}
+
+	return 0;
+}

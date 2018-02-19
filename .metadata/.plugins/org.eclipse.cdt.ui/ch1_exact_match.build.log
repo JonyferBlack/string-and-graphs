@@ -1,0 +1,12 @@
+13:30:28 **** Incremental Build of configuration Debug for project ch1_exact_match ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exact_match.o" "..\\src\\exact_match.cpp" 
+g++ -o ch1_exact_match.exe "src\\exact_match.o" "src\\main.o" "-lE:\\Gdrive\\Repos\\Algos" in strings and "graphs\\ch1_exact_match\\lib\\exact_match.h" 
+g++: error: in: No such file or directory
+g++: error: strings: No such file or directory
+g++: error: and: No such file or directory
+g++: error: graphs\ch1_exact_match\lib\exact_match.h: No such file or directory
+
+13:30:29 Build Finished (took 672ms)
+

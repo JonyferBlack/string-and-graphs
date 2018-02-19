@@ -1,0 +1,22 @@
+//============================================================================
+// Name        : assign20_anagrams.cpp
+// Author      : aivanov
+//============================================================================
+
+#include <iostream>
+#include <map>
+
+
+using namespace std;
+
+map<char, int> BuildCharCounters(string word){
+	map<char, int> result;
+	for (auto& ch : word)
+		result[ch]++;
+	return result;
+}
+
+int main() {
+	cout << "" << endl; // prints 
+	return 0;
+}

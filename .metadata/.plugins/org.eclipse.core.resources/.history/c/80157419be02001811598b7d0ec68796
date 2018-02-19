@@ -1,0 +1,31 @@
+//============================================================================
+// Name        : assign16_reversed.cpp
+// Author      : aivanov
+//============================================================================
+
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+vector<int> Reverse(const vector<int>& v){
+	vector<int> result;
+	auto size = v.size();
+
+	for (auto i= size - 1; i < 0; i--){
+		result.push_back(size);
+	}
+
+	return result;
+}
+
+
+int main() {
+	vector<int> numbers = {1, 5, 3, 4, 2};
+
+	for (auto s : Reverse(numbers)){
+		cout<<s<<" ";
+	}
+
+	return 0;
+}

@@ -1,0 +1,28 @@
+//============================================================================
+// Name        : assign22_bus_stops_1.cpp
+// Author      : aivanov
+//============================================================================
+
+#include <iostream>
+#include <map>
+#include <vector>
+
+using namespace std;
+
+void NEW_BUS(map<int, vector<string>>& stops_by_bus, int bus, int stops_count, string* args){
+	for (auto i = 0; i < stops_count; i++)
+		stops_by_bus[bus].push_back(args[i]);
+}
+
+int main() {
+	map<int, vector<string>> stops_by_bus;
+	int Q;
+	cin >> Q;
+
+	string command;
+	for (auto i = 0; i < Q; i++){
+
+	}
+
+	return 0;
+}

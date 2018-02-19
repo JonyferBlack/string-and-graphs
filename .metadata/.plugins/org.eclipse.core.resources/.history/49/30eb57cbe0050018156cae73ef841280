@@ -1,0 +1,15 @@
+//============================================================================
+// Name        : assign20_anagrams.cpp
+// Author      : aivanov
+//============================================================================
+
+#include <iostream>
+#include <map>
+
+
+using namespace std;
+
+int main() {
+	cout << "" << endl; // prints 
+	return 0;
+}

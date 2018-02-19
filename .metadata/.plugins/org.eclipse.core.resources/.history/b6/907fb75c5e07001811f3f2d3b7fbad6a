@@ -1,0 +1,20 @@
+//============================================================================
+// Name        : assign23_bus_stops_2.cpp
+// Author      : aivanov
+//============================================================================
+
+#include <iostream>
+#include <map>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+	int N;
+	cin >> N;
+	map<vector<string>, int> buses_by_stops(N);
+
+
+	return 0;
+}

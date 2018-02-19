@@ -1,0 +1,57 @@
+//============================================================================
+// Name        : assign26_synonims.cpp
+// Author      : aivanov
+//============================================================================
+
+#include <iostream>
+#include <set>
+#include <vector>
+
+using namespace std;
+
+int main() {
+	const vector<string> known_commands = {"ADD", "COUNT", "CHECK"};
+	vector<set<string>> synonyms;
+
+	int Q;
+	cin >> Q;
+	string command;
+	for (auto i = 0; i < Q; i++){
+		cin >> command;
+//		cout << command;
+		if (command == known_commands[0]){
+			string word1, word2;
+			cin >> word1;
+			cin >> word2;
+			set<string>  tmp = {word1, word2};
+			bool contains = false;
+			for (auto& item : synonyms){
+				if (item.count(word1) == 0 && item.count(word2) == 0) continue;
+				item.insert(begin(tmp), end(tmp));
+				contains = true;
+			}
+			if (!contains) synonyms.push_back(tmp);
+		} else if (command == known_commands[1]){
+			string word;
+			for (auto& item : synonyms){
+				if (item.count(word) != 0) {
+					cout << item.size() << endl;
+				}
+			}
+		} else if(command == known_commands[2]) {
+			string word1, word2;
+			cin >> word1;
+			cin >> word2;
+			string result = "NO";
+			for (auto& item : synonyms){
+				if (item.count(word1) != 0 && item.count(word2) != 0)
+				{
+					result = "YES";
+				}
+			}
+			cout << result <<endl;
+		}
+	}
+
+	return 0;
+}

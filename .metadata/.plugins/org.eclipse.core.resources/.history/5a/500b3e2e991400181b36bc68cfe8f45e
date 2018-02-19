@@ -1,0 +1,15 @@
+/*
+ * string_exact_match.h
+ *
+ *  Created on: Feb 18, 2018
+ *      Author: aivanov
+ */
+
+#ifndef STRING_EXACT_MATCH_H_
+#define STRING_EXACT_MATCH_H_
+
+
+bool string_exact_match(const string& text, const string& pattern);
+
+
+#endif /* STRING_EXACT_MATCH_H_ */

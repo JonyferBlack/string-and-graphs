@@ -1,0 +1,29 @@
+//============================================================================
+// Name        : ssign21_capitals_list.cpp
+// Author      : aivanov
+//============================================================================
+
+#include <iostream>
+#include <map>
+
+using namespace std;
+
+string CHANGE_CAPITAL(const map<string, string>& capital_by_country, string country, string capital){
+	string result = "Country country hasn't changed its capital";
+	if(capital_by_country.count(country) == 0){
+	}
+
+	capital_by_country[country] = capital;
+
+	return result;
+}
+
+int main() {
+	int Q;
+	cin << Q;
+
+
+
+
+	return 0;
+}

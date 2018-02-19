@@ -1,0 +1,11 @@
+11:54:36 **** Incremental Build of configuration Debug for project assign19_mounthly_deals ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\assign19_mounthly_deals.o" "..\\src\\assign19_mounthly_deals.cpp" 
+..\src\assign19_mounthly_deals.cpp: In function 'void Next(std::vector<std::vector<std::__cxx11::basic_string<char> > >&, int&, const std::vector<int>&)':
+..\src\assign19_mounthly_deals.cpp:23:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (data.size() > nextDaysCount){
+      ~~~~~~~~~~~~^~~~~~~~~~~~~~~
+g++ -o assign19_mounthly_deals.exe "src\\assign19_mounthly_deals.o" 
+
+11:54:38 Build Finished (took 2s.390ms)
+

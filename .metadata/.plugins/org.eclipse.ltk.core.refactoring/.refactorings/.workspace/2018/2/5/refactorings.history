@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;assign26_synonims&apos; to &apos;assign26_synonyms&apos;" description="Rename resource &apos;assign26_synonims&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/assign26_synonims" name="assign26_synonyms" stamp="1517501530214" updateReferences="true"/>
+</session>

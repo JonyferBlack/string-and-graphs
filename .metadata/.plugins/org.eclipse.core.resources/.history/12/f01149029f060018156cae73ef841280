@@ -1,0 +1,14 @@
+//============================================================================
+// Name        : assign22_bus_stops_1.cpp
+// Author      : aivanov
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+
+	cout << "" << endl; // prints 
+	return 0;
+}

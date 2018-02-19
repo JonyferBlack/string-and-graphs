@@ -1,0 +1,7 @@
+13:16:36 **** Rebuild of configuration Debug for project w2-a2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o fibonacci_last_digit.o "..\\fibonacci_last_digit.cpp" 
+g++ -o w2-a2.exe fibonacci_last_digit.o 
+
+13:16:37 Build Finished (took 1s.851ms)
+

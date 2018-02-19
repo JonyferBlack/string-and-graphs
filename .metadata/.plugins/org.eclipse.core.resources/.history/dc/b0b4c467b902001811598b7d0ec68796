@@ -1,0 +1,18 @@
+//============================================================================
+// Name        : assign14_string_mover.cpp
+// Author      : aivanov
+//============================================================================
+
+#include <iostream>
+#include <vector>
+#include <string>
+
+using namespace std;
+
+void MoveStrings(vector<string> source, vector<string> destination){
+}
+
+int main() {
+	cout << "" << endl; // prints 
+	return 0;
+}

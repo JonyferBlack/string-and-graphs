@@ -1,0 +1,16 @@
+//============================================================================
+// Name        : string_exact_match.cpp
+// Author      : aivanov
+// Version     :
+// Copyright   : 
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include "string_exact_match.h"
+using namespace std;
+
+int main() {
+	cout << "" << endl; // prints 
+	return 0;
+}

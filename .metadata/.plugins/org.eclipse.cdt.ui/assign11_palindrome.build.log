@@ -1,0 +1,11 @@
+16:45:29 **** Incremental Build of configuration Debug for project assign11_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\assign11_palindrome.o" "..\\src\\assign11_palindrome.cpp" 
+..\src\assign11_palindrome.cpp: In function 'bool IsPalindrom(std::__cxx11::string)':
+..\src\assign11_palindrome.cpp:17:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (auto i=0; i < (word.length() / 2); i++){
+                 ~~^~~~~~~~~~~~~~~~~~~~~
+g++ -o assign11_palindrome.exe "src\\assign11_palindrome.o" 
+
+16:45:29 Build Finished (took 533ms)
+

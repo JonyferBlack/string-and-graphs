@@ -1,0 +1,23 @@
+//============================================================================
+// Name        : assign11_palindrome.cpp
+// Author      : aivanov
+//
+//   true
+// madam	true
+// gentleman	false
+// X	true
+// itiviti true
+//============================================================================
+
+#include <iostream>
+#include <iostream>
+using namespace std;
+
+bool IsPalindrom(string word){
+
+}
+
+int main() {
+	cout << "" << endl; // prints 
+	return 0;
+}

@@ -1,0 +1,19 @@
+//============================================================================
+// Name        : assign20_anagrams.cpp
+// Author      : aivanov
+//============================================================================
+
+#include <iostream>
+#include <map>
+
+
+using namespace std;
+
+void BuildCharCounters(string f_word, string s_word){
+
+}
+
+int main() {
+	cout << "" << endl; // prints 
+	return 0;
+}
